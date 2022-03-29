@@ -13,8 +13,8 @@ router.get('/', function(req, res, next) {
     //console.log(Number(search_params.get("x"))+"hello")
     if(storeValue == 0)
     storeValue=Math.random()
-    res.write('Math.atanh applied to '+storeValue+" is "+Math.atanh(storeValue)+"\n");
-    res.end('Math.cbrt applied to '+storeValue+" is "+Math.cbrt(storeValue));
+    res.write('Math.fround applied to '+storeValue+" is "+Math.fround(storeValue)+"\n");
+    res.end('Math.round applied to '+storeValue+" is "+Math.round(storeValue));
  });
 
 module.exports = router;
