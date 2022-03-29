@@ -9,8 +9,7 @@ router.get('/', function(req, res, next) {
 
     
       storeValue=Number(search_params.get("x"))
-    // if paramter is not specified  value of Number(search_params.get("x")) is always zero
-    //console.log(Number(search_params.get("x"))+"hello")
+   
     if(storeValue == 0)
     storeValue=Math.random()
     res.write('Math.fround applied to '+storeValue+" is "+Math.fround(storeValue)+"\n");
